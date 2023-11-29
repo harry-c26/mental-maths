@@ -15,26 +15,3 @@ def get_username():
     username = input("Enter your name: ")
     print(f"{username}, welcome to Mental Maths!")
     return username
-
-
-def choose_operator():
-    """
-    Ask the user to choose which operator they want to use.
-    Sets the operator for their 5 questions.
-    Validate the user input.
-    """
-    print("Choose which mathematical operator you would like to use.")
-    print("You can choose from add, subtract, multiply and divide.")
-    print("All answers will be whole numbers (integers).")
-    operators = ['add', 'subtract', 'multiply', 'divide']
-    chosen_operator = ""
-    chosen_operator = input("Please enter your mathematical operator: ")
-    return chosen_operator
-
-
-def get_questions():
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
-    operator = ['+', '-', '*', '/']
-    question = f"num1 {operator} num2"
-    answer = eval(question)
