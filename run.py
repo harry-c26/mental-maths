@@ -30,3 +30,11 @@ def choose_operator():
     chosen_operator = ""
     chosen_operator = input("Please enter your mathematical operator: ")
     return chosen_operator
+
+
+def get_questions():
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    operator = ['+', '-', '*', '/']
+    question = f"num1 {operator} num2"
+    answer = eval(question)
