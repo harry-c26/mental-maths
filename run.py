@@ -13,5 +13,10 @@ def get_username():
     Get users name to personalise the quiz.
     """
     username = input("Enter your name: ")
-    print(f"{username}, welcome to Mental Maths!")
+    while username == "":
+        username = input("No name entered, please enter your name: ")
+    print(f"Welcome, {username}, to Mental Maths!")
     return username
+
+
+get_username()
