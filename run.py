@@ -17,7 +17,6 @@ def get_username():
     while True:
         username = input("Enter your name: ")
         if username.strip():
-            print(f"Welcome, {username}, to Mental Maths!")
             return username
         else:
             print("Please enter a valid username")
@@ -46,6 +45,7 @@ def get_answer():
     while True:
         try:
             answer = int(input("Enter answer here: "))
+            return answer
         except ValueError:
             print("Invalid answer. Please enter a valid integer.")
 
@@ -68,6 +68,7 @@ def game():
     Defines how the game is structured pulling in the other functions
     """
     username = get_username()
+    print(f"Welcome, {username}, to Mental Maths!")
 
     operator = get_operator()
 
