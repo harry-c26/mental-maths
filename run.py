@@ -14,36 +14,13 @@ def get_username():
     Validates the input to make sure something is entered before
     adding the username to the welcome message.
     """
-    username = input("Enter your name: ")
-    while username == "":
-        username = input("No name entered, please enter your name: ")
-    print(f"Welcome, {username}, to Mental Maths!")
-    return username
-
-
-def choose_operator():
-    """
-    Gives the user the choice of which operand they want to use
-    for the quiz.
-    Validates the input to ensure it is one of the 4 options.
-    """
-    print("Please choose your operator for the quiz.")
-    print("The options are add, subtract, multiply & divide.")
-    operators = ['add', 'subtract', 'multiply', 'divide']
-    user_operator = ""
-    user_operator = input("Please enter your operator of choice: ")
-    while user_operator not in operators:
-        print("Not a valid option.")
-        user_operator = input("Please enter a valid operator: ")
-    return user_operator
-
-
-def get_answer():
-    """
-    Checks user answer and validates that it's an integer
-    """
     while True:
-        try:
-            answer = int(input("Enter answer here: "))
-        except ValueError:
-            print("Invalid answer. Please enter a valid integer: ")
+        username = input("Enter your name: ")
+        if username.strip():
+            print(f"Welcome, {username}, to Mental Maths!")
+            return username
+        else:
+            print("Please enter a valid username")
+
+
+get_username()
