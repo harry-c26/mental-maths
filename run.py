@@ -47,7 +47,7 @@ def get_answer():
         try:
             answer = int(input("Enter answer here: "))
         except ValueError:
-            print("Invalid answer. Please enter a valid integer: ")
+            print("Invalid answer. Please enter a valid integer.")
 
 
 def generate_question(operator):
