@@ -56,13 +56,21 @@ def generate_question(operator):
     """
     Creates the questions using random integers and the operator
     the user chose.
+    If statement for division makes sure the answer is an integer. 
     """
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
 
-    question = f"{num1} {operator} {num2}"
-    answer = eval(question)
-    return question, answer
+    if operator == '/':
+        num3 = num1 * num2
+        question = f"{num3} {operator} {num2}"
+        answer = eval(question)
+        return question, answer
+
+    else:
+        question = f"{num1} {operator} {num2}"
+        answer = eval(question)
+        return question, answer
 
 
 def main():
