@@ -48,3 +48,12 @@ def get_answer():
             answer = int(input("Enter answer here: "))
         except ValueError:
             print("Invalid answer. Please enter a valid integer: ")
+
+
+def generate_question(operator):
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+
+    question = f"{num1} {operator} {num2}"
+    answer = eval(question)
+    return question, answer
