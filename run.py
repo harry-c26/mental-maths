@@ -36,3 +36,14 @@ def choose_operator():
         print("Not a valid option.")
         user_operator = input("Please enter a valid operator: ")
     return user_operator
+
+
+def get_answer():
+    """
+    Checks user answer and validates that it's an integer
+    """
+    while True:
+        try:
+            answer = int(input("Enter answer here: "))
+        except ValueError:
+            print("Invalid answer. Please enter a valid integer: ")
