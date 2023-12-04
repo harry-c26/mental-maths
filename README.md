@@ -1,32 +1,41 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Maths Quiz - Mental Maths Practise
 
-Welcome,
+** Image **
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+This is a game aimed at my children to help them practise mental maths easily. The idea was to give them the choice of which equation they want to practise and provide them with easy and measureable feedback when they're done. 
 
-## Reminders
+** Game link **
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Contents
 
-## Creating the Heroku app
+1. [Design](#design)
+2. [Features](#features)
+3. [UX](#ux)
+4. [Testing](#testing)
+5. [Sources](#sources)
+6. [Credits](#credits)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Design
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The information used has been kept brief and concise so the user knows what they're doing in a straightforward manner. 
+The design was drafted out on paper so I visualise how I wanted this to flow. 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Notes
 
-Connect your GitHub repository and deploy as normal.
+## UX
 
-## Constraints
+Notes
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Testing
 
----
+Notes
 
-Happy coding!
+## Sources
+
+Notes
+
+## Credits
+
+
