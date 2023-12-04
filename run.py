@@ -51,9 +51,40 @@ def get_answer():
 
 
 def generate_question(operator):
+    """
+    Creates the questions using random integers and the operator
+    the user chose.
+    """
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
 
     question = f"{num1} {operator} {num2}"
     answer = eval(question)
     return question, answer
+
+
+def game():
+    """
+    Defines how the game is structured pulling in the other functions
+    """
+    username = get_username()
+
+    operator = get_operator()
+
+    score = 0
+    for _ in range(5):
+        question, correct_answer = generate_question(operator)
+        print("Question:", question)
+        user_answer = get_answer()
+
+        if user_answer == correct_answer:
+            print("Correct!\n")
+            score += 1
+        else:
+            print(f"Incorrect. The correct answer is {correct_answer}.\n")
+
+    print(f"Congratulations, {username}! You got {score}/5 questions correct.")
+
+
+if __name__ == "__game__":
+    game()
