@@ -1,11 +1,11 @@
 import random
 
-# Welcome to this Mental Maths practise game.
-# You can choose to test yourself with addition,
-# subtraction, multiplication or division.
-# There will be 5 questions to answer to test your Mental Maths skills.
-# Your score will appear at the end.
-# Are you ready? Let's go!
+print("Welcome to this Mental Maths practise game.")
+print("You can choose to test yourself with addition,")
+print("subtraction, multiplication or division.")
+print("There will be 5 questions to answer to test your Mental Maths skills.")
+print("Your score will appear at the end.")
+print("Are you ready? Let's go!")
 
 
 def get_username():
@@ -63,7 +63,7 @@ def generate_question(operator):
     return question, answer
 
 
-def game():
+def main():
     """
     Defines how the game is structured pulling in the other functions
     """
@@ -87,5 +87,5 @@ def game():
     print(f"Congratulations, {username}! You got {score}/5 questions correct.")
 
 
-if __name__ == "__game__":
-    game()
+if __name__ == "__main__":
+    main()
