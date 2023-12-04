@@ -23,4 +23,28 @@ def get_username():
             print("Please enter a valid username")
 
 
-get_username()
+def get_operator():
+    """
+    Gives the user the choice of which operand they want to use
+    for the quiz.
+    Validates the input to ensure it is one of the 4 options.
+    """
+    print("Please choose your operator for the quiz.")
+    print("The options are add, subtract, multiply & divide.")
+    while True:
+        operator = input("Choose an operator from (+, -, *, /): ")
+        if operator in ['+', '-', '*', '/']:
+            return operator
+        else:
+            print("Invalid operator. Please choose +, -, * or /.")
+
+
+def get_answer():
+    """
+    Checks user answer and validates that it's an integer
+    """
+    while True:
+        try:
+            answer = int(input("Enter answer here: "))
+        except ValueError:
+            print("Invalid answer. Please enter a valid integer: ")
