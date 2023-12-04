@@ -1,11 +1,13 @@
 import random
 
+print("**************************************************************")
 print("Welcome to this Mental Maths practise game.")
 print("You can choose to test yourself with addition,")
 print("subtraction, multiplication or division.")
 print("There will be 5 questions to answer to test your Mental Maths skills.")
 print("Your score will appear at the end.")
 print("Are you ready? Let's go!")
+print("**************************************************************")
 
 
 def get_username():
