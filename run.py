@@ -17,7 +17,7 @@ def get_username():
     adding the username to the welcome message.
     """
     while True:
-        username = input("Enter your name: ")
+        username = input("Enter your name:\n")
         if username.strip():
             return username
         else:
@@ -33,7 +33,7 @@ def get_operator():
     print("Please choose your operator for the quiz.")
     print("The options are add, subtract, multiply & divide.")
     while True:
-        operator = input("Choose an operator from (+, -, *, /): ")
+        operator = input("Choose an operator from (+, -, *, /):\n")
         if operator in ['+', '-', '*', '/']:
             return operator
         else:
@@ -46,7 +46,7 @@ def get_answer():
     """
     while True:
         try:
-            answer = int(input("Enter answer here: "))
+            answer = int(input("Enter answer here:\n"))
             return answer
         except ValueError:
             print("Invalid answer. Please enter a valid integer.")
@@ -56,7 +56,7 @@ def generate_question(operator):
     """
     Creates the questions using random integers and the operator
     the user chose.
-    If statement for division makes sure the answer is an integer. 
+    If statement for division makes sure the answer is an integer.
     """
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
